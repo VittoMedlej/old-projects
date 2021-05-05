@@ -1,0 +1,379 @@
+body {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+*::after ,*::before {
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.side {
+    height: 100vh;
+    width:300px;
+    background-color: rgb(85, 85, 85);
+    position: absolute;
+    right: -100%;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    overflow-x: hidden;
+}
+.top {
+        width: 100vw;
+        height: 65px;
+        background-color: BLACK;
+}
+
+.topLinks {
+    padding: 0;
+    display: inline-flex;
+    padding: 5px ;
+}
+.topLinks li {
+    transition: all .3s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+ margin: 0 50px; 
+}
+.bar {
+    width: 22px;
+    height: 3px;
+    background-color: red;
+margin: 3px 0;
+}
+.ham {
+    z-index: 4444;
+color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 20px;
+    flex-direction: column;
+}
+.links {
+    text-align: center;
+    padding: 40px 15px;
+
+
+}
+.topLink {
+    padding: 10px 15px;
+} 
+.links li {
+    font-size: 1.3rem;
+    margin: 35px 0;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(212, 212, 212);
+cursor: pointer;
+transition: all .3s ease-in;
+}
+
+li:hover {
+    background-color: gold;
+    color: black;
+    border-radius: 4444px;
+
+}
+
+.navs {
+    overflow: hidden;
+}
+.side.toggled {
+    right: 0;
+
+}
+
+
+#hero  h1 ,h3{
+    text-align: center;
+    margin: 0;
+ 
+    color: rgb(255, 255, 255);
+
+   
+} 
+#hero h1 {
+    padding: 90px 0 0 0 ;
+
+color: rgb(255, 255, 255);
+    font-size: 2.1rem;
+}
+#hero h3 {
+    padding: 30px 0 0 0;
+    font-size: 1.5rem;
+    width: 70%;
+text-align: center;
+margin: 15px auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+.explore {
+    outline: none;
+    border: none;
+    border: 2px solid red;
+    background-color: transparent;
+   margin: 30px auto;
+   width: 100px;
+   height: 50px;
+   
+}
+
+.explore a 
+ {
+     text-decoration: none;
+     color: rgb(255, 0, 0);
+     font-size: 1.5rem;
+
+ }
+ .textt {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 3px 4px rgba(100, 100, 100, 0.63); 
+
+ }
+ 
+ .ti{
+     color: red;
+     font-size: 2rem;
+     text-align: center;
+     text-shadow: 1px 3px 4px rgb(0, 0, 0); 
+ }
+
+ @media (max-width: 700px) {
+    #hero  h3 {
+font-size: 1.3rem;
+width: 90%;
+color: red;
+    }
+    .about {
+        padding-top: 340px;
+    }
+    .tabel {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+  
+ }
+ 
+ @media (max-width: 1200px) {
+.about {
+    padding-top: 170px;
+}
+ }
+ 
+ .card {
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px ;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
+ }
+ .tabel {
+     display: flex;
+
+    justify-content: space-evenly;
+ }
+.content {
+    padding: 200px 0;
+}
+.top {
+    background-color: rgb(185, 22, 0);
+}
+/*
+menu 
+*/
+.to {
+    text-align: center;
+    color: black;
+}
+.to span {
+    border-bottom: 5px solid red;
+    border-top-left-radius:2300px ;
+}
+.button-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 350px;
+    margin: 0 auto;
+    
+}
+.button-section button {
+  
+    border: none;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: all .4s ease-in-out;
+  
+    color: rgb(0, 0, 0);
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin: 50px 0;
+}
+.button-section button:hover {
+    background-color: rgb(255, 8, 0);
+    color: white;
+}
+.pro {
+    display: flex;
+}
+.proimg {
+    width: 500px;
+    height: 250px;
+    border: 2px solid red;
+    border-radius: 20px;
+
+}
+.inside {
+    padding: 0 10px;
+    flex-direction: column;
+    display: flex;
+    width: 30%;
+
+}
+@media (min-width:1064px) {
+
+    .products {
+        display: flex;
+    flex-wrap: wrap;
+    }
+   .pro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   }
+   .inside {
+    padding: 0 10px;
+    flex-direction: column;
+    display: flex;
+    width: 400px;
+   }
+
+}
+@media (max-width:1064px) {
+    .inside {
+        width: 80%;
+    }
+    .proimg {
+        width: 340px;  
+    }
+}
+@media (max-width: 769px) {
+    .proimg {
+        width: 300px;
+    }
+    .pro {
+        flex-direction: column;
+    }
+}
+@media (max-width :768px) {
+    .imga{
+        
+        margin: 0 auto;
+    }
+    .inside {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+.price {
+    color: red;
+}
+.store {
+    display: flex;
+    flex-wrap: wrap;
+}
+.to {
+    text-align: center;
+}
+.proimg{
+    object-fit: fill;
+}
+.sidez {
+    visibility: hidden;
+        height: 90vh;
+        width: 0;
+        background-color: rgb(48 41 41);
+        position: absolute;
+        left: 0;
+     
+        
+        transition: all .5s ease-in-out;
+        /* border: 1px solid green; */
+    overflow-x: hidden;
+}
+.toggledz {
+    width: 250px;
+    visibility: visible;
+    transition: all .3s ease-out;
+}
+.closed {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    color: red;
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: bolder;
+    cursor: pointer;
+ 
+}
+.item-info {
+    padding: 25px 10px;
+
+}
+.itemm {
+    padding-top: 10px;
+}
+.btnz {
+    display: flex;
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.clear{
+    margin: 0 auto;
+    width: 50%;
+}
+.check {
+    margin: 0 auto;
+    width: 50%;
+}
+.item-info h5 {
+    margin: 0;
+    color: white;
+}
+.item-img img {
+    width: 90px;
+    margin: 25px 3px;
+    border: 1px solid black;
+}
+.itemm {
+    display: inline-flex;
+}
+.finally {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+}
